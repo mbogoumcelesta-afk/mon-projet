@@ -9,8 +9,8 @@
         /* ===== STYLES GLOBAUX (Design Apple) ===== */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            color: #1d1d1f;
-            background-color: #ffffff;
+            color: #f6f6e5;
+            background-color: #4003f893;
             line-height: 1.6;
         }
 
@@ -22,15 +22,17 @@
 
         /* ===== HEADER / NAVIGATION ===== */
         header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e5e5e7;
+            background-color:  #4003f893;
+            border-bottom: 1px solid #4003f893;
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
             backdrop-filter: blur(20px);
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+            background-color:  #4003f893 
+           border-top: 1px solid #fdfdfd     
+          }
+
 
         nav {
             display: flex;
@@ -52,8 +54,8 @@
             /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
         }
 
-        .nav-links a {
-            color: #1d1d1f;
+        .nav-links a {background:  #4003f893;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
@@ -61,13 +63,14 @@
         }
 
         .nav-links a:hover {
+            background: #8e9191;
             /* TODO MARDI CSS : Ajouter opacity: 0.6; */
         }
 
         /* ===== HERO SECTION ===== */
         .hero {
-            background-color: #ffffff;
-            color: #1d1d1f;
+            background-color:  #4003f893;
+            color: #f5f5f8;
             padding: 120px 0;
             text-align: center;
             display: flex;
@@ -86,7 +89,7 @@
 
         .hero p {
             font-size: 1.3rem;
-            color: #6f6f74;
+            color: #f3f4f4;
             margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
@@ -97,7 +100,7 @@
 
         .cta-button {
             display: inline-block;
-            background-color: #0071e3;
+            background-color:  #4003f893;
             color: white;
             padding: 14px 32px;
             border-radius: 980px;
@@ -113,7 +116,7 @@
 
         /* ===== ABOUT SECTION ===== */
         .about {
-            background-color: #ffffff;
+            background-color:  #4003f893;
             padding: 120px 0;
         }
 
@@ -150,14 +153,14 @@
         .about-text h2 {
             font-size: 2.4rem;
             font-weight: 700;
-            color: #1d1d1f;
+            color: #ffffff;
             margin-bottom: 24px;
             letter-spacing: -0.5px;
         }
 
         .about-text p {
             font-size: 1.1rem;
-            color: #6f6f74;
+            color: #ffffff;
             margin-bottom: 24px;
             line-height: 1.8;
             font-weight: 400;
@@ -165,7 +168,7 @@
 
         /* ===== SKILLS SECTION ===== */
         .skills {
-            background-color: #f5f5f7;
+            background-color:  #4003f893;
             padding: 120px 0;
         }
 
@@ -179,7 +182,7 @@
         }
 
         .skill-card {
-            background: white;
+            background: rgb(190, 6, 104);
             padding: 40px;
             border-radius: 20px;
             text-align: center;
@@ -189,6 +192,7 @@
         }
 
         .skill-card:hover {
+            background: #8f1010;
             /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */
         }
 
@@ -200,12 +204,12 @@
         .skill-card h3 {
             font-size: 1.4rem;
             font-weight: 600;
-            color: #1d1d1f;
+            color: #ffffff;
             margin-bottom: 12px;
         }
 
         .skill-card p {
-            color: #6f6f74;
+            color: #ffffff ;
             font-size: 1rem;
             font-weight: 400;
             line-height: 1.6;
@@ -213,7 +217,7 @@
 
         /* ===== PROJECTS SECTION ===== */
         .projects {
-            background-color: #ffffff;
+            background-color:  #4003f893;
             padding: 120px 0;
         }
 
@@ -236,6 +240,7 @@
         }
 
         .project-card:hover {
+            background: #0071e3;
             /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */
         }
 
@@ -246,12 +251,12 @@
         .project-image {
             width: 40%;
             min-height: 300px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0071e3 0%, #0071e3 100%);
             border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #ffffff;
             font-size: 1.3rem;
             font-weight: 600;
         }
@@ -263,13 +268,13 @@
         .project-content h3 {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #1d1d1f;
+            color: #f9f8f8;
             margin-bottom: 16px;
             letter-spacing: -0.5px;
         }
 
         .project-content p {
-            color: #6f6f74;
+            color:#fffdfd;
             margin-bottom: 20px;
             font-size: 1.1rem;
             line-height: 1.7;
@@ -277,7 +282,7 @@
 
         .project-link {
             display: inline-block;
-            color: #0071e3;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -290,7 +295,7 @@
 
         /* ===== CONTACT SECTION / FORM ===== */
         .contact {
-            background-color: #f5f5f7;
+            background-color:  #4003f893;
             padding: 120px 0;
         }
 
@@ -320,7 +325,7 @@
         .form-group label {
             font-weight: 500;
             font-size: 1rem;
-            color: #1d1d1f;
+            color: #ffffff;
         }
 
         .form-group input,
@@ -344,8 +349,8 @@
         }
 
         .submit-button {
-            background-color: #0071e3;
-            color: white;
+            background-color:  #4003f893;
+            color: #ffffff;
             padding: 14px;
             border: none;
             border-radius: 8px;
@@ -362,11 +367,11 @@
 
         /* ===== FOOTER ===== */
         footer {
-            background-color: #f5f5f7;
-            color: #6f6f74;
+            background-color:  #4003f893;
+            color: #ffffff;
             padding: 60px 0;
             text-align: center;
-            border-top: 1px solid #e5e5e7;
+            border-top: 1px solid #ffffff;
         }
 
         .footer-content {
@@ -381,7 +386,7 @@
         .footer-section h3 {
             font-size: 1rem;
             font-weight: 600;
-            color: #1d1d1f;
+            color: #ffffff;
             margin-bottom: 12px;
         }
 
@@ -397,7 +402,7 @@
         }
 
         .social-links a {
-            color: #6f6f74;
+            color: #ffffff;
             text-decoration: none;
             font-size: 1.2rem;
             transition: color 0.3s;
@@ -409,9 +414,9 @@
 
         .footer-bottom {
             font-size: 0.85rem;
-            color: #a1a1a6;
+            color: #ffffff;
             padding-top: 40px;
-            border-top: 1px solid #e5e5e7;
+            border-top: 1px solid #ffffff;
         }
 
         /* ===== MEDIA QUERIES (RESPONSIVE) ===== */
