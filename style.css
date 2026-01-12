@@ -8,9 +8,9 @@
 
         /* ===== STYLES GLOBAUX (Design Apple) ===== */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            color: #f6f6e5;
-            background-color: #4003f893;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; /* Changement de police pour le texte : utilisation de Google Font Inter */
+            color:   #ffffff;
+            background: linear-gradient(135deg, #020617, #020617, #0F172A); 
             line-height: 1.6;
         }
 
@@ -19,19 +19,30 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+/* Pour tous les titres (h1, h2, h3...) */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Style gras pour les titres */
+}
 
+/* Pour le texte normal (paragraphes, listes...) */
+p, li, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Style normal */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
         /* ===== HEADER / NAVIGATION ===== */
         header {
-            background-color:  #4003f893;
+            background-color:  (135deg, #020617, #020617, #0F172A); 
             border-bottom: 1px solid #4003f893;
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
             backdrop-filter: blur(20px);
-            background-color:  #4003f893 
-           border-top: 1px solid #fdfdfd     
-          }
+            background-color: (135deg, #020617, #020617, #0F172A); 
+           /* border-top: 1px solid #fdfdfd; */
+        }
 
 
         nav {
@@ -54,23 +65,26 @@
             /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
         }
 
-        .nav-links a {background:  #4003f893;
-            color: #ffffff;
+        .nav-links a {
+            color:  #ffffff;
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
             transition: opacity 0.3s;
         }
 
-        .nav-links a:hover {
-            background: #8e9191;
-            /* TODO MARDI CSS : Ajouter opacity: 0.6; */
+        .nav-links a:hover {background:#0191ff;
+            opacity: 0.6; /* Effet hover sur les liens de navigation */
+            color: rgb(255, 255, 255);
         }
+    
+
+
 
         /* ===== HERO SECTION ===== */
         .hero {
-            background-color:  #4003f893;
-            color: #f5f5f8;
+            background-color: (135deg, #020617, #020617, #0F172A); 
+            color: #ffffff;
             padding: 120px 0;
             text-align: center;
             display: flex;
@@ -85,11 +99,12 @@
             margin-bottom: 24px;
             letter-spacing: -1px;
             line-height: 1.1;
+            font-family: 'Poppins', sans-serif; /* Changement de police pour les titres : utilisation de Google Font Poppins */
         }
 
         .hero p {
             font-size: 1.3rem;
-            color: #f3f4f4;
+            color:  #ffffff;
             margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
@@ -100,8 +115,8 @@
 
         .cta-button {
             display: inline-block;
-            background-color:  #4003f893;
-            color: white;
+            background-color: (135deg, #020617, #020617, #0F172A); /* Changement de palette de couleurs : remplacement du bleu par du violet */
+            color: rgb(255, 255, 255);
             padding: 14px 32px;
             border-radius: 980px;
             text-decoration: none;
@@ -111,12 +126,13 @@
         }
 
         .cta-button:hover {
-            /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
+            background:#0191ff;
+            background-color: (135deg, #020617, #020617, #0F172A);  /* Hover avec couleur plus claire */
         }
 
         /* ===== ABOUT SECTION ===== */
         .about {
-            background-color:  #4003f893;
+            background-color: (135deg, #020617, #020617, #0F172A); 
             padding: 120px 0;
         }
 
@@ -126,22 +142,26 @@
             margin-bottom: 60px;
             text-align: center;
             letter-spacing: -0.5px;
+            font-family: 'Poppins', sans-serif; /* Police pour les titres de section */
         }
 
         .about-content {
-            display: flex;
-            gap: 60px;
-            align-items: center;
+            /* display: flex; */
+            /* gap: 60px; */
+            /* align-items: center; */
             /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
         }
 
         .about-image {
-            flex: 1;
+            /* flex: 1; */
+            float: left;
+            margin-right: 60px;
             /* TODO MARDI CSS : Ajouter min-height: 400px; */
         }
 
         .about-image img {
-            width: 100%;
+            width: 10cm;
+            height: 12cm;
             border-radius: 20px;
             display: block;
         }
@@ -153,14 +173,15 @@
         .about-text h2 {
             font-size: 2.4rem;
             font-weight: 700;
-            color: #ffffff;
+            color:  #ffffff;
             margin-bottom: 24px;
             letter-spacing: -0.5px;
+            font-family: 'Poppins', sans-serif; /* Police pour les sous-titres */
         }
 
         .about-text p {
             font-size: 1.1rem;
-            color: #ffffff;
+            color:  #ffffff;
             margin-bottom: 24px;
             line-height: 1.8;
             font-weight: 400;
@@ -168,7 +189,7 @@
 
         /* ===== SKILLS SECTION ===== */
         .skills {
-            background-color:  #4003f893;
+            background-color:  (135deg, #020617, #020617, #0F172A); 
             padding: 120px 0;
         }
 
@@ -182,7 +203,7 @@
         }
 
         .skill-card {
-            background: rgb(190, 6, 104);
+            background: (135deg, #020617, #020617, #0F172A); 
             padding: 40px;
             border-radius: 20px;
             text-align: center;
@@ -192,24 +213,31 @@
         }
 
         .skill-card:hover {
-            background: #8f1010;
-            /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */
+            background: #0191ff;
+            transform: translateY(-8px); /* Effet hover sur les cartes de compétences */
         }
 
         .skill-icon {
             font-size: 3.5rem;
             margin-bottom: 20px;
-        }
+            display: block;
+            transition: transform 0.3s;
 
+        }
+.skill-card:hover .skill-icon i {
+    transform: scale(1.2);
+    color:#ffffff
+        }
         .skill-card h3 {
             font-size: 1.4rem;
             font-weight: 600;
-            color: #ffffff;
+            color:  #ffffff;
             margin-bottom: 12px;
+            font-family: 'Poppins', sans-serif; /* Police pour les titres de compétences */
         }
 
         .skill-card p {
-            color: #ffffff ;
+            color:  #ffffff;;
             font-size: 1rem;
             font-weight: 400;
             line-height: 1.6;
@@ -217,7 +245,7 @@
 
         /* ===== PROJECTS SECTION ===== */
         .projects {
-            background-color:  #4003f893;
+            background-color:  (135deg, #020617, #020617, #0F172A); 
             padding: 120px 0;
         }
 
@@ -234,31 +262,57 @@
             gap: 40px;
             align-items: center;
             padding: 40px;
-            background: #f5f5f7;
+            background: (135deg, #020617, #020617, #0F172A); 
             border-radius: 20px;
             transition: all 0.3s;
         }
 
+        .project-card:first-child {
+            margin-left: 40px;
+            gap: 50px;
+        }
+
         .project-card:hover {
-            background: #0071e3;
-            /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */
+            background:#0191ff;
+            transform: translateY(-4px); /* Effet hover sur les cartes de projets */
         }
 
         .project-card:nth-child(2) {
-            flex-direction: row-reverse;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .project-card:nth-child(2) .project-content h3 {
+            color: #ffffff;
+        }
+
+        .project-card:nth-child(2) .project-content p {
+            color:  #ffffff;
         }
 
         .project-image {
             width: 40%;
             min-height: 300px;
-            background: linear-gradient(135deg, #0071e3 0%, #0071e3 100%);
+            background: linear-gradient(135deg, #020617, #020617, #0F172A);  /* Personnalisation des visuels de projets : dégradé violet personnalisé */
             border-radius: 16px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: #ffffff;
+            justify-content: flex-start;
+            color:  #ffffff;
             font-size: 1.3rem;
             font-weight: 600;
+        }
+
+        .project-card:nth-child(2) .project-image img {
+            width: 12cm;
+            height: 12cm;
+            border-radius: 16px;
+        }
+
+        .project-card:first-child .project-image img {
+            width: 12cm;
+            height: 10cm;
+            border-radius: 16px;
         }
 
         .project-content {
@@ -268,13 +322,12 @@
         .project-content h3 {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #f9f8f8;
+            color:  #ffffff;
             margin-bottom: 16px;
-            letter-spacing: -0.5px;
-        }
+            letter-spacing: -0.5px;            font-family: 'Poppins', sans-serif; /* Police pour les titres de projets */        }
 
         .project-content p {
-            color:#fffdfd;
+            color:  #ffffff;
             margin-bottom: 20px;
             font-size: 1.1rem;
             line-height: 1.7;
@@ -282,7 +335,7 @@
 
         .project-link {
             display: inline-block;
-            color: #ffffff;
+            color:  #ffffff; 
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -290,12 +343,13 @@
         }
 
         .project-link:hover {
-            /* TODO MARDI CSS : Ajouter color: #0a84ff; */
+            background: #0191ff;
+            color: #ffffff;;  /* Hover avec couleur violet clair */
         }
 
         /* ===== CONTACT SECTION / FORM ===== */
         .contact {
-            background-color:  #4003f893;
+            background-color: (135deg, #020617, #020617, #0F172A); 
             padding: 120px 0;
         }
 
@@ -305,6 +359,7 @@
             font-weight: 700;
             margin-bottom: 60px;
             letter-spacing: -0.5px;
+            font-family: 'Poppins', sans-serif; /* Police pour le titre de contact */
         }
 
         .contact-form {
@@ -331,7 +386,7 @@
         .form-group input,
         .form-group textarea {
             padding: 12px 16px;
-            border: 1px solid #d2d2d7;
+            border: 1px solid #0d0dcf;
             border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
@@ -340,7 +395,8 @@
 
         .form-group input:focus,
         .form-group textarea:focus {
-            /* TODO MARDI CSS : Ajouter outline: none; border-color: #0071e3; */
+            outline: none; 
+            border-color: (135deg, #020617, #020617, #0F172A);  /* Focus violet */
         }
 
         .form-group textarea {
@@ -349,8 +405,8 @@
         }
 
         .submit-button {
-            background-color:  #4003f893;
-            color: #ffffff;
+            background-color:  (135deg, #020617, #020617, #0F172A);  /* Palette violet */
+            color:  #ffffff;
             padding: 14px;
             border: none;
             border-radius: 8px;
@@ -362,13 +418,14 @@
         }
 
         .submit-button:hover {
-            /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
+            background: #0191ff;
+            background-color: (135deg, #020617, #020617, #0F172A);  /* Hover violet clair */
         }
 
         /* ===== FOOTER ===== */
         footer {
-            background-color:  #4003f893;
-            color: #ffffff;
+            background-color: (135deg, #020617, #020617, #0F172A);
+            color:  #ffffff;
             padding: 60px 0;
             text-align: center;
             border-top: 1px solid #ffffff;
@@ -386,7 +443,7 @@
         .footer-section h3 {
             font-size: 1rem;
             font-weight: 600;
-            color: #ffffff;
+            color:  #ffffff;
             margin-bottom: 12px;
         }
 
@@ -402,14 +459,15 @@
         }
 
         .social-links a {
-            color: #ffffff;
+            color:  #ffffff;
             text-decoration: none;
             font-size: 1.2rem;
             transition: color 0.3s;
         }
 
         .social-links a:hover {
-            /* TODO MARDI CSS : Ajouter color: #1d1d1f; */
+            background: #ffffff;
+            color:  #f10000; /* Effet hover sur les liens sociaux */
         }
 
         .footer-bottom {
@@ -434,7 +492,7 @@
             }
 
             /* TODO MARDI CSS : About - passer en colonne */
-            .about-content {
+            z.about-content {
                 /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 40px; */
             }
 
@@ -544,3 +602,23 @@
         max-width: 100%;
     }
 }
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;        /* BLANC */
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0071e3;        /* bleu au survol (optionnel) */
+    transform: translateY(-3px);
+}
+footer {
+    background-color: #1e2455;
+    padding: 40px;
+}
+
